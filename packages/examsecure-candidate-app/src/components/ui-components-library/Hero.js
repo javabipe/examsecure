@@ -57,9 +57,9 @@ export default ({
           <Row>
             <TextColumn>
               <Heading>
-                Better, Safer, Secure
+                Exames Online
                 <br />
-                Remote Exams
+                Mais Confiáveis
               </Heading>
               <Description className={'primaryText'}>
                 Ensure the authenticity and integrity of your examinations with
