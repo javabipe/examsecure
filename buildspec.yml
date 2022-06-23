@@ -28,6 +28,4 @@ phases:
         --paths /index.html /service-worker.js
 artifacts:
   files:
-    - '**/*'
-  discard-paths: yes
-  base-directory: 'build*'
+    - 'build/**/*'
