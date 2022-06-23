@@ -3,11 +3,11 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - npm install
+      - yarn install
   build:
     commands:
       - echo Build started on `date`
-      - npm run build
+      - yar run build
   post_build:
     commands:
       # copy the contents of /build to S3
