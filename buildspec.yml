@@ -3,8 +3,6 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - yarn upgrade
-      - yarn add yarn
       - yarn install
   build:
     commands:
