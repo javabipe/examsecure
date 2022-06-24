@@ -2,7 +2,7 @@ version: 0.2
 
 env:
     variables:
-        S3_BUCKET: "javabipe"
+        S3_BUCKET: "javabipe/examsecure-ui"
 phases:
   pre_build:
     commands:
