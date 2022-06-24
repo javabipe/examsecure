@@ -37,6 +37,3 @@ artifacts:
         - '/'
     discard-paths: yes
     base-directory: 'build*'
-cache:
-paths:
-    - node_modules/
