@@ -2,7 +2,7 @@ version: 0.2
 
 env:
     variables:
-        S3_BUCKET: "javabipe/examsecure-ui"
+        S3_BUCKET: "javabipe/examsecure-ui/"
 phases:
   pre_build:
     commands:
@@ -17,7 +17,6 @@ phases:
       - echo $CODEBUILD_SRC_DIR
       - echo $S3_BUCKET
       # copy the contents of /build to S3
-      - aws s3 sync ./build
       - aws s3 cp --recursive --acl public-read ./build s3://$S3_BUCKET
       # set the cache-control headers for service-worker.js to prevent browser caching
       - >
