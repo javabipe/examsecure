@@ -1,36 +1,32 @@
 version: 0.2
 
-env:
-    variables:
-        S3_BUCKET: "examsecurelambdas"
 phases:
   pre_build:
     commands:
-      - echo Installing source NPM dependencies...
-      - yarn install --ignore-engines
+      - yarn install
   build:
     commands:
-      - echo Build started on `date`
-      - npm run build
+      - yarn build
   post_build:
     commands:
-      - echo $CODEBUILD_SRC_DIR
-      - echo $S3_BUCKET
       # copy the contents of /build to S3
-      - aws s3 cp --recursive --acl public-read ./build s3://examsecurelambdas/
-      # set the cache-control headers for service-worker.js to prevent browser caching
+      - aws s3 cp --recursive --acl public-read ./build s3://vamosver/ 
+      # set the cache-control headers for service-worker.js to prevent
+      # browser caching
       - >
-        aws s3 cp --acl public-read
-        --cache-control="max-age=0, no-cache, no-store, must-revalidate"
-        ./build/service-worker.js s3://examsecurelambdase/
-      # set the cache-control headers for index.html to prevent browser caching
+        aws s3 cp --acl public-read 
+        --cache-control="max-age=0, no-cache, no-store, must-revalidate" 
+        ./build/service-worker.js s3://vamosver/
+      # set the cache-control headers for index.html to prevent
+      # browser caching
       - >
-        aws s3 cp --acl public-read
-        --cache-control="max-age=0, no-cache, no-store, must-revalidate"
-        ./build/index.html s3://examsecurelambdas/
-      # invalidate the CloudFront cache for index.html and service-worker.js to force CloudFront to update its edge locations with the new versions
+        aws s3 cp --acl public-read 
+        --cache-control="max-age=0, no-cache, no-store, must-revalidate" 
+        ./build/index.html s3://vamosver/
+      # invalidate the CloudFront cache for index.html and service-worker.js
+      # to force CloudFront to update its edge locations with the new versions
       - >
-        aws cloudfront create-invalidation --distribution-id E3552Z2O0OJKV0
+        aws cloudfront create-invalidation --distribution-id E3552Z2O0OJKV0 
         --paths /index.html /service-worker.js
 artifacts:
   files:
