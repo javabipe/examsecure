@@ -5,7 +5,7 @@ import 'firebase/storage';
 import 'firebase/database';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBDpRAq-bM-El7_YUiyV6WVFaaNgT7ubnU',
+  apiKey: 'AIzaSyBDpRAq-bM-El7_YUiyV6WVFaaNgT7ubnsU',
   authDomain: 'project2-e6924.firebaseapp.com',
   projectId: 'project2-e6924',
   storageBucket: 'project2-e6924.appspot.com',
