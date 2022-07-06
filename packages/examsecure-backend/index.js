@@ -226,7 +226,7 @@ async function uploadFlaggedImagetoFirebase(
   test_by,
 ) {
   let uniqueID = uuid();
-  let firebaseURL = `https://project2-e6924-default-rtdb.firebaseio.com/tests/${test_by}/${questionSetID}/flagged_candidates/${username}/${uniqueID}.json?auth=${firebaseApiKey}`;
+  let firebaseURL = `https://algar-1616501032135-default-rtdb.firebaseio.com/tests/${test_by}/${questionSetID}/flagged_candidates/${username}/${uniqueID}.json?auth=${firebaseApiKey}`;
 
   let data = {
     imageURL: s3ImgURL,
@@ -346,3 +346,4 @@ function isHeadPoseOK(yaw, pitch) {
 
   return res;
 }
+
