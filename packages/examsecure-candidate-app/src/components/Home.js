@@ -27,7 +27,7 @@ export default () => {
         <Features
           heading={
             <>
-              <HighlightedText>Features</HighlightedText>
+              <HighlightedText>Recursos</HighlightedText>
             </>
           }
         />
@@ -38,28 +38,28 @@ export default () => {
         />
         <FeaturesTwoColSection3
           textOnLeft={true}
-          heading={'A.I. Powered Proctoring'}
+          heading={'Monitoramento por Inteligência Artificial'}
           subheading={
-            'Keeps an eye on the candidate using real time image analysis'
+            'Fica de olho no aluno usando análise de imagem em tempo real'
           }
           imageSrc={aiIllus}
         />
         <FeaturesTwoColSection2
           textOnLeft={false}
-          heading={'Head Pose Estimation'}
-          subheading={'Detects loss of attention from the screen'}
+          heading={'Estimativa de posição da cabeça'}
+          subheading={'Detecta a falta de atenção da aluno'}
           imageSrc={headposepng}
         />
         <FeaturesTwoColSection4
           textOnLeft={true}
-          heading={'Feature Rich Educator Interface'}
-          subheading={'Realtime Exam Monitoring'}
+          heading={'Interface do Professor rica em recursos'}
+          subheading={'Monitoramento de ensino em tempo real'}
           imageSrc={educator_interface}
         />
         <FAQ
           heading={
             <>
-              Any <HighlightedText>Questions ?</HighlightedText>
+              Alguma <HighlightedText>Dúvida ?</HighlightedText>
             </>
           }
         />
