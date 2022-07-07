@@ -105,7 +105,7 @@ const SignIn = ({ isSignedIn, authState, setAuthState, setLoading }) => {
   const handleForgotPwdVerify = async (e) => {
     e.preventDefault();
     if (pwd !== confirmPwd) {
-      alert('Passwords do not match');
+      alert('As senhas não coincidem');
     } else if (pwd.length < 8) {
       alert('A senha deve ter pelo menos 8 caracteres');
     } else {
