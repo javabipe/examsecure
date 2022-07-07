@@ -57,14 +57,13 @@ export default ({
           <Row>
             <TextColumn>
               <Heading>
-                Exames Online
+                Ensino EAD
                 <br />
-                Mais Confiáveis
+                Mais Confiável
               </Heading>
               <Description className={'primaryText'}>
-                Ensure the authenticity and integrity of your examinations with
-                ExamSecure's AI-powered proctoring solution for remote
-                examinations.
+                Garanta a autenticidade e integridade de seus cursos EAD
+                om a solução de monitoramento com inteligência artificial.
               </Description>
               <PrimaryButton
                 as="a"
@@ -74,7 +73,7 @@ export default ({
                 onClick={() => history.push('/selectQuestionSet')}
                 style={{ marginRight: '20px' }}
               >
-                Try out as a Candidate
+                Testar como Aluno
               </PrimaryButton>
 
               <PrimaryButton
@@ -83,7 +82,7 @@ export default ({
                 className={'heroSectionButton heroSectionButtonSecondary'}
                 href={'https://examsecure-educator.rajrajhans.com'}
               >
-                Try out as an Educator
+                Testar como Professor
               </PrimaryButton>
 
               <FeatureList>
