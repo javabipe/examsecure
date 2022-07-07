@@ -92,13 +92,12 @@ export default ({
             <Subheading>{subheading}</Subheading>
             <Heading className={'homeSectionTitle'}>{heading}</Heading>
             <Description style={{ color: '#000000bf' }}>
-              ExamSecure uses the candidate's webcam feed and performs advanced
-              image analysis on it in real time. Using this, it can detect if
-              there is <b>no person in the camera frame</b>, if there are{' '}
-              <b>multiple people in the camera frame</b>, if the{' '}
-              <b>person in the camera frame is not recognized</b>{' '}
-              (impersonation) and much more. To see what all can be inferred
-              from the webcam feed, check out our image analysis demo.
+              EnsinoSeguro utiliza a webcam do computador e realiza análise de
+              imagens em tempo real. Dessa forma, pode detectar se
+              não tem pessoas<b>em frente a câmera</b>, se existe mais de{' '}
+              <b>uma pessoa durante o curso/prova</b>, se a{' '}
+              <b>pessoa em frente o computador não for reconhecida</b>{' '}
+              (fraudes) e muito mais.
             </Description>
             <PrimaryButton
               as="a"
