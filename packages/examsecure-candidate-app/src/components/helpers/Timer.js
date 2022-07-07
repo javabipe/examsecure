@@ -102,7 +102,7 @@ class Timer extends Component {
 
     return (
       <Alert variant={'warning'} className={'timer'}>
-        <strong>Time Remaining</strong> <br />
+        <strong>Tempo Restante</strong> <br />
         {typeof this.state.timeRemaining === 'undefined' ? (
           <>
             <Spinner
