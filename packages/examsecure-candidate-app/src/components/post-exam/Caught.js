@@ -13,13 +13,13 @@ class Caught extends Component {
     return (
       <Card style={{ marginTop: "50px" }} className={"container"}>
         <Alert variant={"danger"} style={{ textAlign: "center" }}>
-          <b>You have been signed out due to detection of malpractice.</b>
+          <b>Você foi desconectado devido à detecção de mal uso.</b>
           <br />
-          Please contact the administrators.
+          Por favor contate o Professor.
         </Alert>
 
         <Button href={"/"} variant={"outline-primary"}>
-          Click to return to Home
+          Clique para retornar à Pagina Principal
         </Button>
       </Card>
     );
