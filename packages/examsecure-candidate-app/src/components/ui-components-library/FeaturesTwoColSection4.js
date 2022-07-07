@@ -87,12 +87,12 @@ export default ({
             <Subheading>{subheading}</Subheading>
             <Heading className={'homeSectionTitle'}>{heading}</Heading>
             <Description style={{ color: '#000000bf' }}>
-              ExamSecure Educator Interface provides an easy to use way of
-              scheduling, monitoring, and assessing exams. Conducting cheating
-              free exams remotely is no longer a headache! Just create a test,
-              specify time duration, add your questions, and let ExamSecure do
-              the rest! Educators also have the option to disqualify candidates
-              in real time if they are found to resort to malpractice.
+              A Interface do Professorfornece uma maneira fácil de usar
+              agendamento, acompanhamento e avaliação de cursos e exames. Fraudes em  
+              cursos remotos não é mais uma dor de cabeça! Basta criar um teste,
+              especifique a duração do tempo, adicione suas perguntas e deixe o EnsinoSeguro fazer
+              o resto! Os educadores também têm a opção de desqualificar os alunos
+              em tempo real, caso se verifique que recorrem a mal uso.
             </Description>
           </TextContent>
         </TextColumn>
