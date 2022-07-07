@@ -57,8 +57,8 @@ export default ({
       commodo consequat.
     </>
   ),
-  primaryButtonText = 'Learn More',
-  primaryButtonUrl = 'https://rajrajhans.com',
+  primaryButtonText = 'Saiba mais',
+  primaryButtonUrl = 'https://www.google.com.br',
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,
@@ -91,11 +91,10 @@ export default ({
             <Subheading>{subheading}</Subheading>
             <Heading className={'homeSectionTitle'}>{heading}</Heading>
             <Description style={{ color: '#000000bf' }}>
-              ExamSecure is able to determine the{' '}
-              <b>direction in which the user is facing</b> by using Head Pose
-              Estimation technique. If the user is staring away from the screen
-              for long periods of time, ExamSecure can trigger a warning or
-              alert the user.
+              EnsinoSeguro é capaz de detectar{' '}
+              <b>a direnção que o usuário está olhando</b> utilizando de Estimativa
+              de Posição da Cabeça. Se o usuário estiver desatento por um período
+              de tempo, EnsinoSeguro emite um alerta chamando a atenção do aluno.
             </Description>
             <PrimaryButton
               as="a"
