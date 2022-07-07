@@ -143,7 +143,7 @@ const Exam = ({ loadForSeconds, currentUser, email, testData }) => {
                 // If "Objects of Interest" test fails
                 if (res[0]['Success'] === false) {
                   alert(
-                    `Alert! ${res[0]['Details']} Detected! You will be Logged Out.`,
+                    `Alerta! ${res[0]['Details']} Detectado! Você será desconectado.`,
                   );
                   signOut();
                   history.push('/caught');
@@ -152,24 +152,24 @@ const Exam = ({ loadForSeconds, currentUser, email, testData }) => {
                 // If "Person Detection" test fails TODO: Change this alert to custom modal
                 if (res[1]['Success'] === false && res[3]['Details'] > 1) {
                   handleWarningInvokation(
-                    'Warning: Multiple Persons',
-                    'There seem to be multiple people in your camera frame.',
+                    'Warning: Mais de uma Pessoa',
+                    'Parece haver mais de uma pessoa na sua câmera.',
                   );
                 }
 
                 // If "Person Recognition" test fails TODO: Change this alert to custom modal
                 if (res[2]['Success'] === false && res[3]['Success'] === true) {
                   handleWarningInvokation(
-                    'Impersonation Warning!',
-                    'Person in the camera frame is not recognised. Ensure your face is clearly visible!',
+                    'Alerta de Fraude!',
+                    'A pessoa na câmera não é reconhecida. Certifique-se de que seu rosto esteja claramente visível!',
                   );
                 }
 
                 // If "Face Detection" test fails TODO: Change this alert to custom modal
                 if (res[3]['Success'] === false && res[3]['Details'] === 0) {
                   handleWarningInvokation(
-                    'Warning: Face Not Detected!',
-                    'Your face was not detected in the webcam. Ensure your face is clearly visible!',
+                    'Aviso: rosto não detectado!',
+                    'Seu rosto não foi detectado na webcam. Certifique-se de que seu rosto esteja claramente visível!',
                   );
                 }
               }
