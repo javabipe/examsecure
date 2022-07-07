@@ -71,9 +71,9 @@ const SignUp = ({ setLoading }) => {
   const handleSignUp = (e) => {
     e.preventDefault();
     if (pwd !== confirmPwd) {
-      alert('Passwords do not match');
+      alert('As senhas não coincidem');
     } else if (pwd.length < 8) {
-      alert('Password should be at least 8 characters long');
+      alert('A senha deve ter pelo menos 8 caracteres');
     } else {
       setLoading(true);
       console.log(name, email, pwd, confirmPwd);
@@ -90,7 +90,7 @@ const SignUp = ({ setLoading }) => {
         })
         .catch((err) => {
           setLoading(false);
-          alert(`An error occurred: ${err.message}`);
+          alert(`Um erro ocorreu: ${err.message}`);
           console.log(err);
         });
     }
@@ -107,7 +107,7 @@ const SignUp = ({ setLoading }) => {
       })
       .catch((err) => {
         console.log(err);
-        alert(`An error occurred: ${err.message}`);
+        alert(`Um erro ocorreu: ${err.message}`);
       });
   };
 
@@ -116,14 +116,14 @@ const SignUp = ({ setLoading }) => {
       <AuthContainer>
         <StyledWhiteCard>
           <FlexLeft>
-            <Title value={'Sign Up as a Candidate'} />
+            <Title value={'Inscreva-se como Aluno'} />
             <HelperText>
               <div>
-                Sign up for a free ExamSecure Candidate account to continue.
+                Inscreva-se para obter uma conta gratuita de Aluno para continuar.
               </div>
             </HelperText>
             <HelperText>
-              <Link to={'/signin'}>Already have an account? Sign in.</Link>
+              <Link to={'/signin'}>Já tem uma conta? Entrar.</Link>
             </HelperText>
           </FlexLeft>
           <FlexRight>
@@ -199,7 +199,7 @@ const SignUp = ({ setLoading }) => {
             ) : (
               <form onSubmit={handleVerificationSubmit}>
                 <HelperText>
-                  <div>Please enter the six digit code sent on "{email}"</div>
+                  <div>Insira o código de seis dígitos enviado para "{email}"</div>
                 </HelperText>
                 <InputsContainer>
                   <TextInputContainer>
