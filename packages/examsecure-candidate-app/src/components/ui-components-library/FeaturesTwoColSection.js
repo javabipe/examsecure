@@ -88,14 +88,14 @@ export default ({
           <TextContent>
             <Subheading>No "Searching for Answers"</Subheading>
             <Heading className={"homeSectionTitle"}>
-              Complete Browser Lockdown
+              Bloqueio completo do navegador
             </Heading>
             <Description style={{ color: "#000000bf" }}>
-              During the test, ExamSecure enforces strict{" "}
-              <b>Full Screen Mode</b>. It also{" "}
-              <b>disables selection and copying of text</b> in the exam
-              interface. If the user tries to exit fullscreen mode / click
-              anywhere else, ExamSecure detects it and triggers a warning.
+              Durante o teste, o EnsinoSeguro impõe{" "}
+              <b>Modo de Tela Cheia</b>. It also{" "}
+              <b>desativa a seleção e cópia de texto</b> na interface
+              do curso. Se o aluno tentar sair do modo de tela cheia / clicar
+              em outro lugar, EnsinoSeguro detecta isso e emite um aviso.
             </Description>
           </TextContent>
         </TextColumn>
