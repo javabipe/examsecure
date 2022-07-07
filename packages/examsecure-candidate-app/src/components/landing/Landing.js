@@ -53,7 +53,7 @@ const Landing = ({ loadForSeconds, currentUser, questionSetMetadata }) => {
   useEffect(() => {
     if (isDeviceMobile()) {
       alert(
-        'Please log in from a PC for the best experience. Using a mobile phone may lead to unexpected behaviour.',
+        'Faça login a partir de um PC para obter a melhor experiência. Usar um telefone celular pode levar a um comportamento inesperado.',
       );
       history.push('/');
     }
@@ -76,7 +76,7 @@ const Landing = ({ loadForSeconds, currentUser, questionSetMetadata }) => {
       setActiveSlide(1);
       setIsFullscreenActive(false);
       alert(
-        'Please do not exit Full Screen Mode or click anywhere else. You will be logged out!',
+        'Por favor, não saia do modo de tela cheia ou clique em qualquer outro lugar. Você será desconectado!',
       );
       window.location.href = '/';
     }
@@ -96,21 +96,21 @@ const Landing = ({ loadForSeconds, currentUser, questionSetMetadata }) => {
     <Fragment>
       <Alert variant={'warning'} width={'500px'} className={'instructionsBox'}>
         <Alert.Heading className={'instrHeading'}>
-          Please allow required permissions to continue
+          Por favor, permita as permissões necessárias para continuar
         </Alert.Heading>
         <ul className={'instructionsBoxList'}>
           <li>
-            When prompted, you need to click <i>Allow</i> to use the application
-            with your webcam.
+            Quando solicitado, você precisa clicar <i>Permitir</i> para usar o aplicativo
+            com sua webcam.
           </li>
           <li>
-            If you don't see the dialog, try{' '}
-            <a href={currentUrl}>opening the application</a> in a new incognito
-            window, or review your webcam settings on your browser.
+           Se você não vir a caixa de diálogo, tente{' '}
+            <a href={currentUrl}>abrindo o aplicativo</a> em uma nova janla
+            ou revise as configurações de sua webcam em seu navegador.
           </li>
           <li>
-            We recommend using the latest version of <b>Google Chrome</b> for a
-            hassle-free experience.
+            Recomendamos usar a versão mais recente do <b>Google Chrome</b> para uma
+            experiência sem complicações.
           </li>
         </ul>
       </Alert>
@@ -122,7 +122,7 @@ const Landing = ({ loadForSeconds, currentUser, questionSetMetadata }) => {
         disabled
         block
       >
-        Next
+        Próximo
       </Button>
     </Fragment>
   );
@@ -131,20 +131,20 @@ const Landing = ({ loadForSeconds, currentUser, questionSetMetadata }) => {
     <Fragment>
       <Alert variant={'info'} width={'500px'} className={'instructionsBox'}>
         <Alert.Heading className={'instrHeading'}>
-          Full Screen Mode Instructions
+          Instruções do modo de tela cheia
         </Alert.Heading>
         <ul className={'instructionsBoxList'}>
-          <li>Click the button below to enter Full Screen Mode</li>
+          <li>Clique no botão abaixo para entrar no modo de tela cheia</li>
           <li>
-            Do not attempt to exit Full Screen Mode during the exam. You will be
-            logged out!
+            Não tente sair do modo de tela cheia durante o exame. Você será
+            desconectado!
           </li>
           <li>
-            Ensure all <b>popups have been disabled</b> before proceeding.
+            Certifique-se de que todos<b>pop-ups foram desativados</b> antes de proceder.
           </li>
           <li>
-            If you keep getting redirected to this screen, ensure you are
-            allowing camera permissions to ExamSecure. We recommend using Google
+            Se você continuar sendo redirecionado para esta tela, certifique-se de estar
+            permitindo permissões de câmera para ExamSecure. Recomendamos usar o Google
             Chrome.
           </li>
         </ul>
@@ -158,7 +158,7 @@ const Landing = ({ loadForSeconds, currentUser, questionSetMetadata }) => {
           block
           onClick={() => setActiveSlide(2)}
         >
-          Next
+          Próximo
         </Button>
       ) : (
         <Button
@@ -172,7 +172,7 @@ const Landing = ({ loadForSeconds, currentUser, questionSetMetadata }) => {
             )
           }
         >
-          Enter Full Screen
+          Entrar em tela cheia
         </Button>
       )}
     </Fragment>
@@ -182,20 +182,20 @@ const Landing = ({ loadForSeconds, currentUser, questionSetMetadata }) => {
     <Fragment>
       <Alert variant={'info'} width={'500px'} className={'instructionsBox'}>
         <Alert.Heading className={'instrHeading'}>
-          Exam Instructions
+          Instruções do Exame
         </Alert.Heading>
         <ul className={'instructionsBoxList'}>
-          <li>Ensure your face is clearly visible in the webcam.</li>
+          <li>Certifique-se de que seu rosto esteja claramente visível na webcam.</li>
           <li>
-            Do not attempt to exit fullscreen mode. You will be logged out.
+            Não tente sair do modo de tela cheia. Você será desconectado.
           </li>
           <li>
-            Do not wear cap, scarf, goggles / sunglasses, headphones, earphones.
+           Não use boné, óculos de proteção/óculos de sol, fones de ouvido.
           </li>
-          <li>Do not attempt to hide your face during the test.</li>
+          <li>Não tente esconder seu rosto durante o teste.</li>
           <li>
-            Ensure that no one else is sitting with you during the entire
-            duration of the test.
+            Certifique-se de que ninguém mais esteja sentado com você durante todo o
+            duração do teste.
           </li>
         </ul>
       </Alert>
@@ -207,7 +207,7 @@ const Landing = ({ loadForSeconds, currentUser, questionSetMetadata }) => {
         block
         onClick={() => setActiveSlide(3)}
       >
-        Next
+        Próximo
       </Button>
     </Fragment>
   );
@@ -219,19 +219,19 @@ const Landing = ({ loadForSeconds, currentUser, questionSetMetadata }) => {
         width={'500px'}
         className={'instructionsBox confirmationBox'}
       >
-        <Alert.Heading className={'instrHeading'}>Confirmation</Alert.Heading>
+        <Alert.Heading className={'instrHeading'}>Confirmaação</Alert.Heading>
         {questionSetMetadata ? (
           <div className={'confirmationText'}>
             <div>
-              Selected Exam: <b>{questionSetMetadata.test_name}</b>
+              Exame Selecionado: <b>{questionSetMetadata.test_name}</b>
             </div>
             <div>
-              Duration of the Exam:{' '}
-              <b>{questionSetMetadata.test_duration} minutes</b>
+              Duração do Exame:{' '}
+              <b>{questionSetMetadata.test_duration} minutos</b>
             </div>
           </div>
         ) : null}
-        <div>Are you sure you want to start the test?</div>
+        <div>Tem certeza de que deseja iniciar o teste?</div>
       </Alert>
 
       <Link to={'/exam'}>
