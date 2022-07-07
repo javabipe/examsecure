@@ -107,7 +107,7 @@ const SignIn = ({ isSignedIn, authState, setAuthState, setLoading }) => {
     if (pwd !== confirmPwd) {
       alert('Passwords do not match');
     } else if (pwd.length < 8) {
-      alert('Password should be at least 8 characters long');
+      alert('A senha deve ter pelo menos 8 caracteres');
     } else {
       try {
         setLoading(true);
@@ -136,27 +136,27 @@ const SignIn = ({ isSignedIn, authState, setAuthState, setLoading }) => {
           <AuthContainer>
             <StyledWhiteCard>
               <FlexLeft>
-                <Title value={'Sign In as a Candidate'} />
+                <Title value={'Entrar como Aluno'} />
                 <HelperText>
                   <div style={{ paddingBottom: '20px', paddingTop: '16px' }}>
-                    For a test drive of the platform, simply click Sign In with
-                    prefilled credentials.
+                    Para um test drive da plataforma, basta clicar em Entrar com
+                    credenciais pré-preenchidas.
                   </div>
                 </HelperText>
                 <div>
                   <div>
                     <Link to={'/signup'}>
-                      Don't have an account? Create one.
+                      Não tem uma conta? Crie uma.
                     </Link>
                   </div>
                   <div>
                     {stage === 0 ? (
                       <a href={'#'} onClick={() => setStage(1)}>
-                        Forgot Password?
+                        Esqueceu Senha?
                       </a>
                     ) : (
                       <a href={'#'} onClick={() => setStage(0)}>
-                        Back to Sign In.
+                        Voltar para Entrar.
                       </a>
                     )}
                   </div>
@@ -238,7 +238,7 @@ const SignIn = ({ isSignedIn, authState, setAuthState, setLoading }) => {
                         <InputsContainer>
                           <HelperText>
                             <div>
-                              Please enter the six digit code sent through email
+                              Insira o código de seis dígitos enviado por e-mail
                             </div>
                           </HelperText>
                           <TextInputContainer>
