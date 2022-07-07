@@ -17,10 +17,10 @@ class PostSubmit extends Component {
         style={{ margin: '100px auto', textAlign: 'center', maxWidth: '800px' }}
       >
         <Card.Title style={{ marginTop: '10px' }}>
-          <strong className="mr-auto">Thank You!</strong>
+          <strong className="mr-auto">Obrigado!</strong>
         </Card.Title>
 
-        <Card.Body>Thank for taking a test on ExamSecure!</Card.Body>
+        <Card.Body>Obrigado por experimentar o EnsinoSeguro!</Card.Body>
       </Card>
     );
   }
