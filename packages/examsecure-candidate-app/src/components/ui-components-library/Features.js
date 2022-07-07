@@ -55,19 +55,19 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
 
 export default ({
   cards = null,
-  heading = "Features",
-  description = "ExamSecure's wide array of features help deter candidates from cheating and resorting to any malpractice and protects the integrity of examinations. ",
+  heading = "Recursos",
+  description = "A ampla gama de recursos do Ensino Seguro ajuda a impedir os alunos de trapacear e recorrer a qualquer negligência e protege a integridade do ensino. ",
 }) => {
   const defaultCards = [
     {
       imageSrc: aiIcon,
       title: "Face Detection & Analysis",
     },
-    { imageSrc: personIcon, title: "Impersonation Detection" },
-    { imageSrc: headIcon, title: "Head Pose Estimation" },
-    { imageSrc: shieldIcon, title: "Complete Browser Lockdown" },
-    { imageSrc: bandwidthIcon, title: "Low Bandwidth Requirement" },
-    { imageSrc: forkIcon, title: "Open Source and Customizable" },
+    { imageSrc: personIcon, title: "Identificação de fraude" },
+    { imageSrc: headIcon, title: "Estimativa da posição da cabeça" },
+    { imageSrc: shieldIcon, title: "Bloqueio completo do navegador" },
+    { imageSrc: bandwidthIcon, title: "Baixo consumo de internet" },
+    { imageSrc: forkIcon, title: "Totalmnete personalizável" },
   ];
 
   if (!cards) cards = defaultCards;
