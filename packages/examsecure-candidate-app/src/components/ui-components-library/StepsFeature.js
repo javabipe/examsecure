@@ -57,19 +57,19 @@ export default ({
 
   const defaultSteps = [
     {
-      heading: "Candidate Logs In",
+      heading: "Aluno faz login",
       description:
-        "After you create an examination with the authorized emails of candidates, only users with those emails will be allowed to log in.",
+        "Depois de criar um exame com os e-mails autorizados dos alunos, apenas os usuários com esses e-mails poderão fazer login.",
     },
     {
-      heading: "Candidate allows access to webcam",
+      heading: "Candidato permite acesso à webcam",
       description:
-        "Before starting the exam, the system makes sure that candidate's webcam is working properly.",
+        "Antes de iniciar o exame, o sistema verifica se a webcam do candidato está funcionando corretamente.",
     },
     {
-      heading: "Candidate gives the exam securely",
+      heading: "Aluno faz curso de forma segura",
       description:
-        "After webcam setup, ExamSecure continuously sends snapshots from the candidate's camera to the server and detects any malpractice.",
+        "Após a configuração da webcam, o Ensino Seguro envia continuamente instantâneos da câmera do aluno para o servidor e detecta qualquer trapaça.",
     },
   ];
 
