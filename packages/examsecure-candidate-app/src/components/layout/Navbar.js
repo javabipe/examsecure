@@ -29,11 +29,11 @@ const ESNavbar = ({ isSignedIn }) => {
       <Navbar.Collapse id="basic-navbar-nav" className={'justify-content-end'}>
         <Nav>
           <Nav.Link as={Link} to={'/demoVideos'} eventKey={'/demoVideos'}>
-            Demo Videos
+            Vídeo demonstrativo
           </Nav.Link>
 
           <Nav.Link as={Link} to={'/demo'} eventKey={'/demo'}>
-            Image Analysis Demo
+            Exmeplo de análise de imageme
           </Nav.Link>
 
           {isSignedIn ? (
@@ -42,10 +42,10 @@ const ESNavbar = ({ isSignedIn }) => {
                 onClick={() => history.push('/selectQuestionSet')}
                 eventKey={'4'}
               >
-                Exam
+                Exame
               </Nav.Link>
               <Nav.Link href="/" onClick={signOut} eventKey={'2'}>
-                Sign Out
+                Sair
               </Nav.Link>
             </>
           ) : null}
