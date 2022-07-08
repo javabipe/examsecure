@@ -110,7 +110,7 @@ export default ({
                 padding: '0.7rem',
               }}
             >
-              Try out the Demo
+              Faça um teste
             </PrimaryButton>
             <PrimaryButton
               as="a"
@@ -124,7 +124,7 @@ export default ({
                 marginLeft: '10px',
               }}
             >
-              Demo Videos
+              Vídeos
             </PrimaryButton>
           </TextContent>
         </TextColumn>
