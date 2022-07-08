@@ -7,21 +7,21 @@ const DetailsModal = ({ show, onModalHide }) => {
   return (
     <Modal show={show} onHide={onModalHide} className="proc-modal">
       <Modal.Header closeButton>
-        <Modal.Title>Disqualify the candidate?</Modal.Title>
+        <Modal.Title>Desqualificar o aluno?</Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
-        Once disqualified, the candidate's test will be automatically submitted
-        and they will be logged out of the platform!
+        Quando desqualificado, o teste do aluno será automaticamente encerrado
+        e ele será desconectado da plataforma!
       </Modal.Body>
 
       <Modal.Footer>
         <ESButton
           variant="primary"
           onClick={onModalHide}
-          label={'Disqualify'}
+          label={'Desqualificar'}
         />
-        <ESButton variant="secondary" onClick={onModalHide} label={'Back'} />
+        <ESButton variant="secondary" onClick={onModalHide} label={'Voltar'} />
       </Modal.Footer>
     </Modal>
   );
