@@ -6,10 +6,9 @@ const TestReports = () => {
   return (
     <div>
       <div>
-        <Title value={'Test Analytics'} />
+        <Title value={'Análise de Testes'} />
         <div className="proc-dash-flagged-images-text">
-          This is an overview of the test based on candidate performance, time
-          taken to complete the test, etc.
+          Esta é uma visão geral do teste com base no desempenho por candidato, tempo para realização do teste, etc.
         </div>
         <ComingSoon />
       </div>
