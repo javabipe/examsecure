@@ -60,24 +60,19 @@ export default ({
       ),
     },
     {
-      question: "Como funciona o ensino Seguro?",
+      question: "Como funciona o Ensino Seguro?",
       answer:
-        "ExamSecure uses Amazon Rekognition service to analyze images in real time and detect any objectionable content in the candidate's camera frames to spot malpractice. ExamSecure also uses Head Pose Estimation to determine whether the candidate is staring away from the screen for long periods of time and triggers a warning if so. Furthermore, during an exam, ExamSecure completely locks down the candidate's browser, triggering a warning if the candidate tries to switch tabs/windows or exit full screen mode. Copying of text is also disabled in the exam environment.",
+        "O Ensino Seguro utiliza de Inteligência Artificial para analisar imagens em tempo real e detectar qualquer violação a regras de ensino EAD, evitando que alunos possam utilizar de meios fraudulentos para realizar cursos ou avaliações. Através de estimativa de posição facial, o sistema determina se o aluno está desatento e emite um alerta. Na realização das atividades, o sistema bloqueia completamente o navegador, avisando se o aluno tentar alternar entre as guias ou sair do modo de tela cheia.",
     },
     {
-      question: "What is Head Pose Estimation?",
+      question: "O que é a estimativa de posição facial?",
       answer:
-        "Head Pose Estimation involves predicting the pose of a human head in an image in terms of the three Euler Anglers - Yaw, Pitch and Roll. These three values are used to describe the rotation of an object in 3D space. Using Rekognition, ExamSecure is able to determine in which direction the human head is facing using these values. To see this in action, check out our free image analysis demo page.",
+        "A estimativa da posição facial diz respeito à previsão da pose de uma cabeça humana em uma imagem em termos da teoria angular de Euler. Os valores são usados para descrever a rotação de um objeto no espaço 3D. Nosso sistema é capaz de determinar em qual direção a cabeça humana está voltada usando esses valores.",
     },
     {
-      question: "Is ExamSecure scalable for my needs?",
+      question: "O Ensino Seguro é adaptável à minha necessidade?",
       answer:
-        "ExamSecure uses AWS Services like Serverless Lambda Functions and API Gateway for processing, Cognito for Authentication, Rekognition for Image Analysis, CloudFront and S3 for hosting, which makes it easily scalable to any amount of load.",
-    },
-    {
-      question: "How can I use ExamSecure for my needs?",
-      answer:
-        "Currently, ExamSecure is a Work In Progress and is used for a specific usecase. The code, however, is open source, so you are free to customize and deploy it for your specific needs.",
+        "Sim, nosso sistema foi desenvolvido para atender todo tipo de instituição de ensino, podendo ser modificado para atender qualquer demanda.",
     },
   ],
 }) => {
@@ -94,7 +89,7 @@ export default ({
         <Column>
           <HeaderContent>
             <Heading>FAQs</Heading>
-            <Description>Frequently Asked Questions</Description>
+            <Description>Perguntas Frequentes</Description>
           </HeaderContent>
           <FAQSContainer>
             {faqs.map((faq, index) => (
