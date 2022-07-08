@@ -4,11 +4,10 @@ import { Title } from '@examsecure/design-system';
 const TestTakenCandidates = () => {
   return (
     <div>
-      <Title value={'Tests Taken'} />
+      <Title value={'Testes realizados'} />
       <div className="proc-dash-flagged-images-text">
-        This page shows the list of all candidates who have submitted the tests
-        or have been disqualified. Click on a candidate to see their detailed
-        report.
+        Esta página mostra a relação de alunos que já realizaram o teste ou que
+        foram desqualificados. Clique no aluno para ver os relatório com detalhes.
       </div>
     </div>
   );
