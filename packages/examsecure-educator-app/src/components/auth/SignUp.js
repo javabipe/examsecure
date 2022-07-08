@@ -68,7 +68,7 @@ const SignUp = (props) => {
   const handleSignUp = (e) => {
     e.preventDefault();
     if (pwd !== confirmPwd) {
-      alert('Passwords do not match');
+      alert('As senhas não coincidem');
     }
     props.signUp({ name, email, pwd });
   };
@@ -81,7 +81,7 @@ const SignUp = (props) => {
       <AuthContainer>
         <StyledWhiteCard>
           <FlexLeft>
-            <Title value={'Sign Up as Educator'} />
+            <Title value={'Inscreva-se como Professor'} />
             <HelperText>
               <div>
                 {authError ? (
@@ -90,16 +90,14 @@ const SignUp = (props) => {
                   </div>
                 ) : (
                   <>
-                    Sign up for an Educator account for free to create, schedule
-                    remote examinations with AI powered proctoring and powerful
-                    analytics.
+                    Inscreva-se para obter uma conta gratuita de Professor para continuar.
                   </>
                 )}
               </div>
             </HelperText>
             <HelperText>
               <div>
-                Already have an account? <Link to="/sign-in"> Sign In</Link>
+                Já tem uma conta? <Link to="/sign-in"> Entrar.</Link>
               </div>
             </HelperText>
           </FlexLeft>
@@ -108,7 +106,7 @@ const SignUp = (props) => {
               <InputsContainer>
                 <TextInputContainer>
                   <TextInput
-                    label={'Name'}
+                    label={'Nome'}
                     onBlur={onBlur}
                     onChange={(name) => {
                       setName(name);
@@ -136,7 +134,7 @@ const SignUp = (props) => {
                 </TextInputContainer>
                 <TextInputContainer>
                   <TextInput
-                    label={'Password'}
+                    label={'Senha'}
                     onBlur={onBlur}
                     onChange={(pwd) => {
                       setPwd(pwd);
@@ -150,7 +148,7 @@ const SignUp = (props) => {
                 </TextInputContainer>
                 <TextInputContainer>
                   <TextInput
-                    label={'Confirm Password'}
+                    label={'Confirme a Senha'}
                     onBlur={onBlur}
                     onChange={(pwd) => {
                       setConfirmPwd(pwd);
@@ -166,7 +164,7 @@ const SignUp = (props) => {
               <ButtonContainer>
                 <Button
                   variant={'primary'}
-                  label={'Sign Up'}
+                  label={'Inscrever'}
                   type={'submit'}
                   width={'150px'}
                 />
