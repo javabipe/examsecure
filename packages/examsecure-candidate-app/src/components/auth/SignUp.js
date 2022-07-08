@@ -132,7 +132,7 @@ const SignUp = ({ setLoading }) => {
                 <InputsContainer>
                   <TextInputContainer>
                     <TextInput
-                      label={'Name'}
+                      label={'Nome'}
                       onBlur={onBlur}
                       onChange={(name) => {
                         setName(name);
@@ -160,7 +160,7 @@ const SignUp = ({ setLoading }) => {
                   </TextInputContainer>
                   <TextInputContainer>
                     <TextInput
-                      label={'Password'}
+                      label={'Senha'}
                       onBlur={onBlur}
                       onChange={(pwd) => {
                         setPwd(pwd);
@@ -174,7 +174,7 @@ const SignUp = ({ setLoading }) => {
                   </TextInputContainer>
                   <TextInputContainer>
                     <TextInput
-                      label={'Confirm Password'}
+                      label={'Confirme a Senha'}
                       onBlur={onBlur}
                       onChange={(pwd) => {
                         setConfirmPwd(pwd);
@@ -190,7 +190,7 @@ const SignUp = ({ setLoading }) => {
                 <ButtonContainer>
                   <Button
                     variant={'primary'}
-                    label={'Sign Up'}
+                    label={'Inscrever'}
                     type={'submit'}
                     width={'150px'}
                   />
@@ -204,7 +204,7 @@ const SignUp = ({ setLoading }) => {
                 <InputsContainer>
                   <TextInputContainer>
                     <TextInput
-                      label={'Verification Code'}
+                      label={'Código de Verificação'}
                       onBlur={onBlur}
                       onChange={(code) => {
                         setVerificationCode(code);
@@ -220,7 +220,7 @@ const SignUp = ({ setLoading }) => {
                 <ButtonContainer>
                   <Button
                     variant={'primary'}
-                    label={'Submit'}
+                    label={'Enviar'}
                     type={'submit'}
                     width={'150px'}
                   />
