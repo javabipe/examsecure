@@ -22,7 +22,7 @@ const OverviewPane = ({
         <Row>
           <Col>
             <Form.Group>
-              <Form.Label>Test Name</Form.Label>
+              <Form.Label>Nome do teste</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Exemplo de teste"
