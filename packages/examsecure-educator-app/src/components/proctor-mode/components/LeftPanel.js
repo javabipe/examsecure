@@ -37,7 +37,7 @@ const ProctorModeLeftPanel = ({ testID }) => {
           </div>
         </Link>
 
-        <div className="proc-mode-left-panel-title">Candidates</div>
+        <div className="proc-mode-left-panel-title">Alunos</div>
 
         <Link to={generateLink(PROC_MODE_CURRENT_CANDIDATES)}>
           <div className={generateClassName(PROC_MODE_CURRENT_CANDIDATES)}>
@@ -71,7 +71,7 @@ const ProctorModeLeftPanel = ({ testID }) => {
 
         <Link to={generateLink(PROC_MODE_TEST_REPORTS)}>
           <div className={generateClassName(PROC_MODE_TEST_REPORTS)}>
-            Test Analytics
+            Análise dos testes
           </div>
         </Link>
 
