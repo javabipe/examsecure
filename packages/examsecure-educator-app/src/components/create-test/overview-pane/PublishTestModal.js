@@ -17,14 +17,14 @@ const PublishTestModal = ({
   return (
     <Modal show={show} onHide={onModalHide} size={'lg'}>
       <Modal.Header closeButton>
-        <Modal.Title>Publish the test?</Modal.Title>
+        <Modal.Title>Publicar o teste?</Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
-        Please review the test details before publishing.
+        Por favor confira o teste antes de publicar.
         <Form>
           <Form.Group>
-            <Form.Label>Test Name</Form.Label>
+            <Form.Label>Nome do teste</Form.Label>
             <Form.Control
               type="text"
               readOnly
@@ -32,7 +32,7 @@ const PublishTestModal = ({
             />
           </Form.Group>
           <Form.Group>
-            <Form.Label>Test Description</Form.Label>
+            <Form.Label>Descrição do teste</Form.Label>
             <Form.Control
               type="text"
               readOnly
@@ -40,7 +40,7 @@ const PublishTestModal = ({
             />
           </Form.Group>
           <Form.Group>
-            <Form.Label>Test Duration</Form.Label>
+            <Form.Label>Duração do teste</Form.Label>
             <Form.Control
               type="text"
               readOnly
@@ -48,7 +48,7 @@ const PublishTestModal = ({
             />
           </Form.Group>
           <Form.Group>
-            <Form.Label>Test Starts on</Form.Label>
+            <Form.Label>O teste começa em</Form.Label>
             <Form.Control
               type="text"
               readOnly
@@ -56,7 +56,7 @@ const PublishTestModal = ({
             />
           </Form.Group>
           <Form.Group>
-            <Form.Label>Test Ends on</Form.Label>
+            <Form.Label>O teste termina em</Form.Label>
             <Form.Control
               type="text"
               readOnly
@@ -64,7 +64,7 @@ const PublishTestModal = ({
             />
           </Form.Group>
           <Form.Group>
-            <Form.Label>Test Type</Form.Label>
+            <Form.Label>Tipo de teste</Form.Label>
             <Form.Control
               type="text"
               readOnly
@@ -72,11 +72,11 @@ const PublishTestModal = ({
             />
           </Form.Group>
           <Form.Group>
-            <Form.Label>Questions Added</Form.Label>
+            <Form.Label>Questões adicionadas</Form.Label>
             <Form.Control
               type="text"
               readOnly
-              value={`${numOfQuestions} Questions`}
+              value={`${numOfQuestions} Questões`}
             />
           </Form.Group>
         </Form>
@@ -86,9 +86,9 @@ const PublishTestModal = ({
         <ESButton
           variant="secondary"
           onClick={onModalHide}
-          label={'Go Back to Edit'}
+          label={'Voltar para edição'}
         />
-        <ESButton variant="primary" onClick={onSubmit} label={'Publish Test'} />
+        <ESButton variant="primary" onClick={onSubmit} label={'Publicar o teste'} />
       </Modal.Footer>
     </Modal>
   );
