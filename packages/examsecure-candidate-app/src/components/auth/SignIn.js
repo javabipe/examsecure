@@ -182,7 +182,7 @@ const SignIn = ({ isSignedIn, authState, setAuthState, setLoading }) => {
                       </TextInputContainer>
                       <TextInputContainer>
                         <TextInput
-                          label={'Password'}
+                          label={'Senha'}
                           onBlur={onBlur}
                           onChange={(pwd) => {
                             setPwd(pwd);
@@ -198,7 +198,7 @@ const SignIn = ({ isSignedIn, authState, setAuthState, setLoading }) => {
                     <ButtonContainer>
                       <Button
                         variant={'primary'}
-                        label={'Sign In'}
+                        label={'Entrar'}
                         type={'submit'}
                         width={'150px'}
                       />
@@ -227,7 +227,7 @@ const SignIn = ({ isSignedIn, authState, setAuthState, setLoading }) => {
                         <ButtonContainer>
                           <Button
                             variant={'primary'}
-                            label={'Submit'}
+                            label={'Enviar'}
                             type={'submit'}
                             width={'150px'}
                           />
@@ -243,7 +243,7 @@ const SignIn = ({ isSignedIn, authState, setAuthState, setLoading }) => {
                           </HelperText>
                           <TextInputContainer>
                             <TextInput
-                              label={'Verification Code'}
+                              label={'Código de Verificação'}
                               onBlur={onBlur}
                               onChange={(verificationCode) => {
                                 setVerificationCode(verificationCode);
@@ -257,7 +257,7 @@ const SignIn = ({ isSignedIn, authState, setAuthState, setLoading }) => {
                           </TextInputContainer>
                           <TextInputContainer>
                             <TextInput
-                              label={'New Password'}
+                              label={'Nova Senha'}
                               onBlur={onBlur}
                               onChange={(pwd) => {
                                 setPwd(pwd);
@@ -271,7 +271,7 @@ const SignIn = ({ isSignedIn, authState, setAuthState, setLoading }) => {
                           </TextInputContainer>
                           <TextInputContainer>
                             <TextInput
-                              label={'Confirm New Password'}
+                              label={'Confirme a Nova Senha'}
                               onBlur={onBlur}
                               onChange={(pwd) => {
                                 setConfirmPwd(pwd);
@@ -287,7 +287,7 @@ const SignIn = ({ isSignedIn, authState, setAuthState, setLoading }) => {
                         <ButtonContainer>
                           <Button
                             variant={'primary'}
-                            label={'Submit'}
+                            label={'Enviar'}
                             type={'submit'}
                             width={'150px'}
                           />
