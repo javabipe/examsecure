@@ -45,14 +45,14 @@ const ProctorDashboard = ({ test }) => {
         <TopBar test={test} />
 
         <div className="proc-dash-flagged-images">
-          <Title value={'Flagged Images'} />
+          <Title value={'Imagens Sinalizadas'} />
           <div className="proc-dash-flagged-images-text">
-            Any images flagged as suspicious by the system will show up here,
-            along with the relevant details. You can choose to disqualify the
-            candidate, or archive the log. If you choose to disqualify the
-            candidate, their test will be automatically submitted and they will
-            be logged out. Click on "<strong>More Details</strong>" to view in
-            depth image analysis report.
+            Todas as imagens sinalizadas como suspeitas pelo sistema aparecerão aqui,
+            juntamente com os detalhes relevantes. Você pode optar por desqualificar o
+            aluno ou arquivar o registro. Se você optar por desqualificar o
+            aluno, seu teste será submetido automaticamente e ele
+            será desconectado. Clique em "<strong>Mais Detalhes</strong>" para ver
+            uma análise mais profunda.
           </div>
 
           {!test ? (
@@ -73,7 +73,7 @@ const ProctorDashboard = ({ test }) => {
               ))}
 
               <div className="proc-dash-flagged-images">
-                <Title value={'Flagged Images (Archived)'} />
+                <Title value={'Imagens sinalizadas (arquivadas)'} />
                 {[14, 235, 623].map((i) => (
                   <FlaggedImageRecord
                     key={i}
