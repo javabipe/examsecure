@@ -29,11 +29,11 @@ const ESNavbar = ({ isSignedIn }) => {
       <Navbar.Collapse id="basic-navbar-nav" className={'justify-content-end'}>
         <Nav>
           <Nav.Link as={Link} to={'/demoVideos'} eventKey={'/demoVideos'}>
-            Vídeo demonstrativo
+            Avaliação Gratuita
           </Nav.Link>
 
           <Nav.Link as={Link} to={'/demo'} eventKey={'/demo'}>
-            Exmeplo de análise de imageme
+            Preços
           </Nav.Link>
 
           {isSignedIn ? (
