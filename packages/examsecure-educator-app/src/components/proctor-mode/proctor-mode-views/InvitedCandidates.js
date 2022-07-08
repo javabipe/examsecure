@@ -4,10 +4,10 @@ import { Title } from '@examsecure/design-system';
 const InvitedCandidates = () => {
   return (
     <div>
-      <Title value={'Invited Candidates'} />
+      <Title value={'Alunos convidados'} />
       <div className="proc-dash-flagged-images-text">
-        This page shows the list of all candidates invited to take the test.
-        Click on Add to invite more candidates.
+        Esta página mostra a lista de alunos convidados para o teste.
+        Clique em Adicionar para convidar mais alunos.
       </div>
     </div>
   );
