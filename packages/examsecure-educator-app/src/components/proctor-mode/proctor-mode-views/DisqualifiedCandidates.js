@@ -4,11 +4,10 @@ import { Title } from '@examsecure/design-system';
 const DisqualifiedCandidates = () => {
   return (
     <div>
-      <Title value={'Disqualified Candidates'} />
+      <Title value={'Alunos desqualificados'} />
       <div className="proc-dash-flagged-images-text">
-        This page shows the list of candidates that have been disqualified from
-        the test. You can choose to reset their test and allow them to re
-        attempt the test.
+        Esta página mostra a relação dos alunos que foram desqualificados
+        do teste. Você pode reiniciar o teste e dar uma nova oportunidade.
       </div>
     </div>
   );
