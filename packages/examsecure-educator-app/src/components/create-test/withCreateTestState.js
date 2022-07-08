@@ -93,18 +93,18 @@ const validateTestDetails = (testDetailsInput, numOfQuestions) => {
 
   Object.entries(testDetailsInput).map(([k, v]) => {
     if (k === 'test_duration' && v <= 0) {
-      errorMessage += ' Enter a valid test duration. \n';
+      errorMessage += ' Digite um tempo de duração válido. \n';
       isTestDetailsOK = false;
     }
 
     if (v === '') {
-      errorMessage += ` Please fill the ${k} field! \n`;
+      errorMessage += ` Por favor preencha o campo ${k} ! \n`;
       isTestDetailsOK = false;
     }
   });
 
   if (numOfQuestions <= 1) {
-    errorMessage += ` Please add at least one question to publish this test \n`;
+    errorMessage += ` Por favor adicione no mínimo uma questão para públicar o exame! \n`;
     isTestDetailsOK = false;
   }
 
