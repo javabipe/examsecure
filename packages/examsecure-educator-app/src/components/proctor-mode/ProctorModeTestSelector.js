@@ -28,13 +28,13 @@ const ProctorModeTestSelector = () => {
     <div>
       <div className="proc-dash-wrapper">
         <div>
-          <Title value={'Proctor Dashboard'} />
+          <Title value={'Painel de monitoria'} />
         </div>
 
         <div className="proc-test-selector-container">
-          <h3>Select Test</h3>
+          <h3>Selecione o teste</h3>
           <div style={{ marginBottom: '1rem', color: '#868181' }}>
-            Please select a test to proceed
+            Selecione um teste para continuar
           </div>
           <div className="proc-test-selector">
             {!tests ? (
@@ -45,7 +45,7 @@ const ProctorModeTestSelector = () => {
               <div className="dash-tests-container">
                 <Form.Group>
                   <Form.Control as={'select'} onChange={handleChange}>
-                    <option value="">Select a Test</option>
+                    <option value="">Selecione um tste</option>
                     {Object.entries(tests)?.map(([id, test]) => (
                       <option value={id} key={id}>
                         {test.test_name}
@@ -57,7 +57,7 @@ const ProctorModeTestSelector = () => {
             )}
           </div>
           <Button
-            label={'Go to Proctor Dashboard'}
+            label={'Ir para Painel de Monitoria'}
             variant={'secondary'}
             onClick={handleGoToDashboard}
           />
