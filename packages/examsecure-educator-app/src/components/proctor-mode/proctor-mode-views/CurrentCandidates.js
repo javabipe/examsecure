@@ -4,12 +4,12 @@ import { Title } from '@examsecure/design-system';
 const CurrentCandidates = () => {
   return (
     <div>
-      <Title value={'Candidates Currently Taking the Test'} />
+      <Title value={'Alunos realizando o curso no momento />
       <div className="proc-dash-flagged-images-text">
-        This page shows the list of all candidates who are currently taking the
-        test. You can extend time for a particular candidate or all the
-        candidates. Reports will be available in the “Tests Taken” tab after a
-        candidate submits their test.
+        Esta página mostra a lista de todos os alunos que estão atualmente fazendo o
+         teste. Você pode estender o tempo para um aluno ou todos os
+         alunos. Os relatórios estarão disponíveis na guia “Testes realizados” após um
+         aluno terminar seu teste.
       </div>
     </div>
   );
