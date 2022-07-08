@@ -87,12 +87,12 @@ export default ({
             <Subheading>{subheading}</Subheading>
             <Heading className={'homeSectionTitle'}>{heading}</Heading>
             <Description style={{ color: '#000000bf' }}>
-              A Interface do Professorfornece uma maneira fácil de usar
-              agendamento, acompanhamento e avaliação de cursos e exames. Fraudes em  
-              cursos remotos não é mais uma dor de cabeça! Basta criar um teste,
-              especifique a duração do tempo, adicione suas perguntas e deixe o EnsinoSeguro fazer
-              o resto! Os educadores também têm a opção de desqualificar os alunos
-              em tempo real, caso se verifique que recorrem a mal uso.
+              A Interface do Professor fornece uma maneira fácil de acompanhamento
+              e avaliação de cursos e exames. De maneira automática o sistema  
+              traz um histórico de infrações detectadas! Basta criar uma prova/curso teste,
+              determinar o tempo de duração, adicionar suas perguntas e deixar o EnsinoSeguro fazer
+              o resto! Os Professores também têm a opção de desqualificar os alunos
+              em tempo real, caso se verifique que recorrem a infrações.
             </Description>
           </TextContent>
         </TextColumn>
