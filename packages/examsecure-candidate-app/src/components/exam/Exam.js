@@ -143,7 +143,7 @@ const Exam = ({ loadForSeconds, currentUser, email, testData }) => {
                 // If "Objects of Interest" test fails
                 if (res[0]['Success'] === false) {
                   alert(
-                    `Alerta! ${res[0]['Details']} Detectado! Você será desconectado.`,
+                    `ALERTA! ${res[0]['Details']} Detectado! Você será desconectado.`,
                   );
                   signOut();
                   history.push('/caught');
@@ -152,7 +152,7 @@ const Exam = ({ loadForSeconds, currentUser, email, testData }) => {
                 // If "Person Detection" test fails TODO: Change this alert to custom modal
                 if (res[1]['Success'] === false && res[3]['Details'] > 1) {
                   handleWarningInvokation(
-                    'Warning: Mais de uma Pessoa',
+                    'AVISO: Mais de uma Pessoa',
                     'Parece haver mais de uma pessoa na sua câmera.',
                   );
                 }
@@ -160,15 +160,15 @@ const Exam = ({ loadForSeconds, currentUser, email, testData }) => {
                 // If "Person Recognition" test fails TODO: Change this alert to custom modal
                 if (res[2]['Success'] === false && res[3]['Success'] === true) {
                   handleWarningInvokation(
-                    'Alerta de Fraude!',
-                    'A pessoa na câmera não é reconhecida. Certifique-se de que seu rosto esteja claramente visível!',
+                    'ALERTA DE FRAUDE!',
+                    'A pessoa na câmera não foi reconhecida. Certifique-se de que seu rosto esteja claramente visível!',
                   );
                 }
 
                 // If "Face Detection" test fails TODO: Change this alert to custom modal
                 if (res[3]['Success'] === false && res[3]['Details'] === 0) {
                   handleWarningInvokation(
-                    'Aviso: rosto não detectado!',
+                    'AVISO: rosto não detectado!',
                     'Seu rosto não foi detectado na webcam. Certifique-se de que seu rosto esteja claramente visível!',
                   );
                 }
