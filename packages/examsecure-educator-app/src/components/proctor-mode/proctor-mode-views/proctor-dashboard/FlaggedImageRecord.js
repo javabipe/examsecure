@@ -21,17 +21,17 @@ const FlaggedImageRecord = ({
       </div>
       <div className="proc-dash-flagged-image-details">
         <div>
-          <strong>Candidate Name: </strong>
+          <strong>Nome do aluno: </strong>
           <span>{record?.candidate_name}</span>
         </div>
         <div>
-          <strong>Reason for Flag: </strong>
+          <strong>Motivo da sinalização: </strong>
           <span>{record?.reason}</span>
         </div>
 
         <div className="proc-dash-flagged-image-details-btn">
           <Button
-            label={'More Details'}
+            label={'Mais detalhes'}
             variant={'secondary'}
             onClick={handleModalClick}
           />
@@ -42,11 +42,11 @@ const FlaggedImageRecord = ({
         {!archived && (
           <>
             <Button
-              label={'Disqualify'}
+              label={'Desqualificar'}
               variant={'secondary'}
               onClick={toggleDisqualifyModal}
             />
-            <Button label={'Archive'} variant={'secondary'} />
+            <Button label={'Arquivar'} variant={'secondary'} />
           </>
         )}
       </div>
