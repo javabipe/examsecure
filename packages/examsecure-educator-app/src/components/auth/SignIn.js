@@ -55,8 +55,8 @@ const HelperText = styled.div`
 `;
 
 const SignIn = (props) => {
-  const [email, setEmail] = useState('es@rajrajhans.com');
-  const [pwd, setPwd] = useState('password');
+  const [email, setEmail] = useState('javabipe@gmail.com');
+  const [pwd, setPwd] = useState('bipe8751');
 
   const onBlur = () => {};
 
@@ -74,25 +74,25 @@ const SignIn = (props) => {
       <AuthContainer>
         <StyledWhiteCard>
           <FlexLeft>
-            <Title value={'Sign In as Educator'} />
+            <Title value={'Entrar como Professor'} />
             <HelperText>
               <div style={{ paddingBottom: '20px', paddingTop: '16px' }}>
                 {authError ? (
                   <div style={{ color: 'red' }}>
-                    {authError.error.message} Please try again.
+                    {authError.error.message} Por favor tente novamente.
                   </div>
                 ) : (
                   <>
-                    For a test drive of the platform, enter "demo@vit.edu" as
-                    both the username and password
+                    Para um teste drive da plataforma, insira "javabipe@gmail.com" como
+                    usuário e "bipe8751" como senha
                   </>
                 )}
               </div>
               <div>
-                Don't have an account?
-                <Link to="/sign-up"> Create one</Link>
+                Não tem uma conta?
+                <Link to="/sign-up"> Crie uma.</Link>
               </div>
-              <div>Forgot Password?</div>
+              <div>Esqueceu Senha?</div>
             </HelperText>
           </FlexLeft>
           <FlexRight>
