@@ -53,7 +53,7 @@ const CreateTest = ({
 
   return (
     <div className={'dash-wrapper'}>
-      <Title value={'Create New Test'} />
+      <Title value={'Criar Nova Prova'} />
 
       <div className="dash-ct-bar">
         <div className="dash-ct-bar-left">
@@ -81,7 +81,7 @@ const CreateTest = ({
         {currentView === 0 ? (
           <>
             <Button
-              label={'Publish'}
+              label={'Publicar'}
               variant={'secondary'}
               onClick={togglePublishTestModal}
             />
@@ -89,7 +89,7 @@ const CreateTest = ({
         ) : (
           <>
             <Button
-              label={'Add a Question'}
+              label={'Adicionar Questão'}
               variant={'secondary'}
               onClick={toggleAddNewQuestionModal}
             />
