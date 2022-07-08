@@ -11,14 +11,14 @@ const QuestionsPaneTopBar = ({ questions, testDuration }) => {
   return (
     <div className="dash-qp-top-bar">
       <div className="dash-qp-top-bar-left">
-        Total Questions Added: {questions?.length}
+        Questões totais adicionadas: {questions?.length}
       </div>
 
       <div className="dash-qp-top-bar-right">
-        <div>Total Test Score: {totalScore}</div>
+        <div>Pontuação total do exame: {totalScore}</div>
 
         <div>
-          Duration: {testDuration ? `${testDuration} minutes` : 'Not set'}
+          Duração: {testDuration ? `${testDuration} minutos` : 'Não definido'}
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@ const QuestionsPane = ({
                 ))}
               </>
             ) : (
-              <div style={{ textAlign: 'center' }}>No Questions added yet.</div>
+              <div style={{ textAlign: 'center' }}>Sem questões adicionadas ainda.</div>
             )}
           </>
         )}
