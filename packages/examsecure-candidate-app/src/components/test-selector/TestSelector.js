@@ -69,7 +69,7 @@ const TestSelector = ({ fetchQuestions, questions, currentUser }) => {
         <Card style={{ maxWidth: '600px', margin: '70px auto' }}>
           <Card.Header>
             <Card.Title style={{ marginBottom: '0' }}>
-              To begin, select a test available to you
+              Para iniciar, selecione um teste disponível para você
             </Card.Title>
           </Card.Header>
           <Form onSubmit={handleSubmit}>
@@ -77,7 +77,7 @@ const TestSelector = ({ fetchQuestions, questions, currentUser }) => {
               <Form.Group>
                 {qSets.length > 0 && isSpinnerActive === false ? (
                   <>
-                    <Form.Label>Selecione um exame</Form.Label>
+                    <Form.Label>Selecione um teste</Form.Label>
                     <Form.Control
                       as={'select'}
                       custom
