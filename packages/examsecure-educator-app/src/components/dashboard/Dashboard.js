@@ -16,14 +16,14 @@ const Dashboard = () => {
   return (
     <div className={'dash-wrapper'}>
       <div className="dash-top-bar">
-        <Title value={'Your Tests'} />
+        <Title value={'Seus testes'} />
         <Link to={'/create-new-test'}>
-          <Button label={'Create New Test'} variant={'secondary'} />
+          <Button label={'Criar novo teste'} variant={'secondary'} />
         </Link>
       </div>
 
       {tests === null ? (
-        <div className="loading-spinner">No Tests Created yet</div>
+        <div className="loading-spinner">Sem testes criados ainda.</div>
       ) : (
         <>
           {!tests ? (
