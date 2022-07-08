@@ -130,7 +130,7 @@ const SignIn = ({ isSignedIn, authState, setAuthState, setLoading }) => {
   return (
     <>
       {isSignedIn ? (
-        <>{window.history.back()}</>
+        <>{window.location.assign("https://ensinoseguro.com.br/selectQuestionSet")}</>
       ) : (
         <>
           <AuthContainer>
