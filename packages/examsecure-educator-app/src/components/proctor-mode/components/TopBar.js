@@ -14,9 +14,9 @@ const TestTimeDisplay = ({ datetime, type }) => {
   let text = '';
 
   if (type === 'start') {
-    text = isNowBeforeTestDate ? 'Will start at ' : 'Started at';
+    text = isNowBeforeTestDate ? 'Vai começar em ' : 'Começou em';
   } else {
-    text = isNowBeforeTestDate ? 'Will end at ' : 'Ended at';
+    text = isNowBeforeTestDate ? 'Vai terminar em ' : 'Terminou em';
   }
 
   return <>{`${text} ${datetime}`}</>;
@@ -37,14 +37,14 @@ const ProctorModeTopBar = ({ test }) => {
                   .join(' ') + '...'
           }`}</>
         ) : (
-          'Loading...'
+          'Carregando...'
         )}
       </div>
       <div className="proc-mode-top-bar-test-details">
-        <div>Ongoing</div>
+        <div>Em andamento</div>
         <div>|</div>
         <div className="copy-link">
-          <CopyIcon /> Test Link
+          <CopyIcon /> Link do teste
         </div>
         <div>|</div>
         <div>
