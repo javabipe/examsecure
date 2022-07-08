@@ -41,27 +41,26 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 export default ({
   faqs = [
     {
-      question: "What is a proctored exam?",
+      question: "O que é o Ensino Seguro?",
       answer:
-        "A proctored exam refers to a digital assessment using AI-powered monitoring software to invigilate the test-taker. It involves using video feed from test-taker's camera to avoid any objectionable instances. A proctored exam allows students to take their exams remotely, including their homes, provided it is a complacent environment.",
+        "Ensino Seguro é uma plataforma de supervisão educacional que utiliza de Inteligência Artificial para monitorar os alunos durante cursos/provas EAD. Utiliza da webcam do aluno para detectar qualquer tipo de cola/fraude/mal uso.",
     },
     {
-      question: "What are the advantages of online proctoring?",
+      question: "Quais são as vantagens do Ensino Seguro?",
       answer: (
         <>
-          During the Covid pandemic, Online Examinations have become a
-          necessity. However, there is always a question on the integrity of
-          exam conducted online, since it is relatively easy for the candidates
-          to cheat. This is where Online Proctoring comes into picture.
-          Automated Online Proctoring makes it possible to ensure the integrity
-          of the exams without any need for constant human intervention. It
-          makes sure that the authenticity of exam remains valid by preventing
-          candidates from using unfair means.
+           Durante a pandemia de Covid, os cursos EAD tornaram-se uma
+           necessidade. No entanto, há sempre uma questão sobre a integridade do
+           curso/exame realizado online, uma vez que é relativamente fácil para os candidatos
+           colar/burlar. É aqui que entra em cena o Ensino seguro.
+           A supervisão online automatizada torna possível garantir a integridade
+           dos cursos/exames sem necessidade de intervenção humana constante. Isto
+           garante autenticidade, evitando que o aluno trapaceie ou cole.
         </>
       ),
     },
     {
-      question: "How does ExamSecure work?",
+      question: "Como funciona o ensino Seguro?",
       answer:
         "ExamSecure uses Amazon Rekognition service to analyze images in real time and detect any objectionable content in the candidate's camera frames to spot malpractice. ExamSecure also uses Head Pose Estimation to determine whether the candidate is staring away from the screen for long periods of time and triggers a warning if so. Furthermore, during an exam, ExamSecure completely locks down the candidate's browser, triggering a warning if the candidate tries to switch tabs/windows or exit full screen mode. Copying of text is also disabled in the exam environment.",
     },
