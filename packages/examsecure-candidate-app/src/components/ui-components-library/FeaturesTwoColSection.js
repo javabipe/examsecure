@@ -86,16 +86,16 @@ export default ({
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
-            <Subheading>No "Searching for Answers"</Subheading>
+            <Subheading>Sem "Buscar no Google"</Subheading>
             <Heading className={"homeSectionTitle"}>
               Bloqueio completo do navegador
             </Heading>
             <Description style={{ color: "#000000bf" }}>
-              Durante o teste, o EnsinoSeguro impõe{" "}
-              <b>Modo de Tela Cheia</b>. It also{" "}
+              Durante as aulas, o EnsinoSeguro impõe{" "}
+              <b>Modo de Tela Cheia</b>. Além isso, {" "}
               <b>desativa a seleção e cópia de texto</b> na interface
               do curso. Se o aluno tentar sair do modo de tela cheia / clicar
-              em outro lugar, EnsinoSeguro detecta isso e emite um aviso.
+              em outro lugar, o sistema identifica e emite um alerta.
             </Description>
           </TextContent>
         </TextColumn>
