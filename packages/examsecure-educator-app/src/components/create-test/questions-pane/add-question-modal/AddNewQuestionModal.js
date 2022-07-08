@@ -48,14 +48,14 @@ const AddNewQuestionModal = ({
       size={'lg'}
     >
       <Modal.Header closeButton>
-        <Modal.Title>Add New Question</Modal.Title>
+        <Modal.Title>Adicionar nova questão</Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
         <div className="qp-add-new-question-container">
           <Form>
             <Form.Group>
-              <Form.Label>Question Type</Form.Label>
+              <Form.Label>Tipo de questão</Form.Label>
               <Form.Control
                 as={'select'}
                 value={inputs.question_type}
@@ -63,17 +63,17 @@ const AddNewQuestionModal = ({
                 onChange={onChangeHandler}
               >
                 <option value={'mcq_single'}>
-                  Multiple Choice (Single Answer)
+                  Múltipla Escolha (Única Resposta)
                 </option>
                 <option value={'mcq_multiple'}>
-                  Multiple Choice (Multiple Answers)
+                  Múltipla Escolha (Múltiplas Resposta)
                 </option>
-                <option value={'subjective'}>Subjective</option>
+                <option value={'subjective'}>Subjetiva</option>
               </Form.Control>
             </Form.Group>
 
             <Form.Group>
-              <Form.Label>Question Text</Form.Label>
+              <Form.Label>Texto da questão</Form.Label>
               <Form.Control
                 as="textarea"
                 style={{ height: '150px' }}
@@ -84,10 +84,10 @@ const AddNewQuestionModal = ({
             </Form.Group>
 
             <Form.Group>
-              <Form.Label>Number of marks for the question</Form.Label>
+              <Form.Label>Numério de opções da questão</Form.Label>
               <Form.Control
                 type="number"
-                placeholder="Marks for the question"
+                placeholder="Opções da questão"
                 value={inputs.question_max_score}
                 name={'question_max_score'}
                 onChange={onChangeHandler}
@@ -95,26 +95,26 @@ const AddNewQuestionModal = ({
             </Form.Group>
 
             <Form.Group>
-              <Form.Label>Negative Marking</Form.Label>
+              <Form.Label>Marcação negativa</Form.Label>
               <Form.Control
                 as={'select'}
                 value={inputs.negative_marking}
                 name={'negative_marking'}
                 onChange={onChangeHandler}
               >
-                <option value={'no'}>No</option>
-                <option value={'yes'}>Yes</option>
+                <option value={'no'}>Não</option>
+                <option value={'yes'}>Sim</option>
               </Form.Control>
             </Form.Group>
 
             {inputs.negative_marking === 'yes' && (
               <Form.Group>
-                <Form.Label>Negative Marks for this question</Form.Label>
+                <Form.Label>Marcação negativa para essa questão</Form.Label>
                 <InputGroup>
                   <InputGroup.Text>-</InputGroup.Text>
                   <Form.Control
                     type="number"
-                    placeholder="How many marks to deduct if candidate answers this question incorrectly"
+                    placeholder="Quantos pontos devem ser deduzidos se o candidato responder a esta pergunta incorretamente"
                     value={inputs.negative_marks}
                     name={'negative_marks'}
                     onChange={onChangeHandler}
