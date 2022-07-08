@@ -22,7 +22,7 @@ const ExamWarningModal = ({ show, setShow, title, text }) => {
         <Modal.Body>{text}</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+            Fechar
           </Button>
         </Modal.Footer>
       </Modal>
