@@ -54,9 +54,9 @@ const Navbar = (props) => {
         <Nav>
           {isSignedIn ? (
             <>
-              <NavbarItem name={'Your Tests'} path={'/'} />
-              <NavbarItem name={'Create New Test'} path={'/create-new-test'} />
-              <NavbarItem name={'Proctor Mode'} path={'/proctor-mode'} />
+              <NavbarItem name={'Seus testes'} path={'/'} />
+              <NavbarItem name={'Criar novo teste'} path={'/create-new-test'} />
+              <NavbarItem name={'Modo de Monitoria'} path={'/proctor-mode'} />
 
               <li>
                 <Nav.Link
