@@ -5,12 +5,12 @@ export default function validateQuestionInput(questionsInput) {
   Object.entries(questionsInput).map(([k, v]) => {
     if (k === 'choices' && questionsInput.question_type !== 'subjective') {
       if (v.length <= 1) {
-        errorMessage += ' Enter more than one choice for the answer. \n';
+        errorMessage += ' Digite mais de uma opção para a resposta. \n';
         isTestDetailsOK = false;
       }
       v?.forEach((choice) => {
         if (choice.choice_text === '') {
-          errorMessage += ' Make sure the choices are not empty!. \n';
+          errorMessage += ' Verifique se as opções não estão vazias!. \n';
           isTestDetailsOK = false;
         }
       });
@@ -19,7 +19,7 @@ export default function validateQuestionInput(questionsInput) {
       questionsInput.question_type === 'mcq_single' &&
       v === ''
     ) {
-      errorMessage += ' Make sure to select the correct answer. \n';
+      errorMessage += ' Certifique-se de selecionar a resposta correta. \n';
       isTestDetailsOK = false;
     } else if (
       k === 'correct_choices' &&
@@ -27,11 +27,11 @@ export default function validateQuestionInput(questionsInput) {
     ) {
       const choicesArray = [...v];
       if (choicesArray.length < 1) {
-        errorMessage += ' Make sure to select the correct choices. \n';
+        errorMessage += ' Certifique-se de selecionar as opções corretas. \n';
         isTestDetailsOK = false;
       }
     } else if (v === '' && k !== 'correct_choice_id') {
-      errorMessage += ` Please fill the ${k} field! \n`;
+      errorMessage += ` Por favor preencha o campo ${k} ! \n`;
       isTestDetailsOK = false;
     }
   });
