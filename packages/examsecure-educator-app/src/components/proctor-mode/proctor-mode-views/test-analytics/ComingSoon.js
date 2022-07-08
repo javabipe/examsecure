@@ -7,7 +7,7 @@ const ComingSoon = () => {
       <div>
         <ComingSoonIllustration />
         <div>
-          <b>We're working on this feature. Please check back soon!</b>
+          <b>Estamos trabalhando neste recuro. Volte em breve!</b>
         </div>
       </div>
     </div>
