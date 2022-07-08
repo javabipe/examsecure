@@ -42,8 +42,8 @@ const StepHeading = tw.h6`leading-none text-xl font-semibold`;
 const StepDescription = tw.p`mt-3 max-w-xs leading-loose text-sm text-gray-600 font-medium`;
 
 export default ({
-  subheading = "Easy to Use",
-  heading = <>User Friendly Platform</>,
+  subheading = "Fácil de usar",
+  heading = <>Plataforma Simples</>,
   imageSrc = TeamIllustrationSrc,
   imageRounded = true,
   imageBorder = false,
@@ -59,7 +59,7 @@ export default ({
     {
       heading: "Aluno faz login",
       description:
-        "Depois de criar um exame com os e-mails autorizados dos alunos, apenas os usuários com esses e-mails poderão fazer login.",
+        "Depois de criar um exame com os e-mails específiccos, apenas os alunos com esses e-mails poderão fazer login.",
     },
     {
       heading: "Candidato permite acesso à webcam",
@@ -67,9 +67,9 @@ export default ({
         "Antes de iniciar o exame, o sistema verifica se a webcam do candidato está funcionando corretamente.",
     },
     {
-      heading: "Aluno faz curso de forma segura",
+      heading: "Aluno faz curso de forma monitorada",
       description:
-        "Após a configuração da webcam, o Ensino Seguro envia continuamente instantâneos da câmera do aluno para o servidor e detecta qualquer trapaça.",
+        "Após a configuração da webcam, o Ensino Seguro envia continuamente imagens da câmera do aluno para o servidor e detecta qualquer trapaça.",
     },
   ];
 
