@@ -25,7 +25,7 @@ const OverviewPane = ({
               <Form.Label>Test Name</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="My Sample Test"
+                placeholder="Exemplo de teste"
                 value={testDetailsInput.test_name}
                 name={'test_name'}
                 onChange={handleTestDetailsInputChange}
@@ -35,7 +35,7 @@ const OverviewPane = ({
 
           <Col>
             <Form.Group>
-              <Form.Label>Test Duration</Form.Label>
+              <Form.Label>Duração do teste</Form.Label>
               <InputGroup>
                 <Form.Control
                   type="number"
@@ -52,10 +52,10 @@ const OverviewPane = ({
 
           <Col>
             <Form.Group>
-              <Form.Label>Starts On</Form.Label>
+              <Form.Label>Início em</Form.Label>
               <DateTime
                 inputProps={{
-                  placeholder: 'Test Start Time & Date',
+                  placeholder: 'Data e hora de início',
                   name: 'test_starts_at',
                 }}
                 name={'test_starts_at'}
@@ -71,10 +71,10 @@ const OverviewPane = ({
 
           <Col>
             <Form.Group>
-              <Form.Label>Ends On</Form.Label>
+              <Form.Label>Termina em</Form.Label>
               <DateTime
                 inputProps={{
-                  placeholder: 'Test Start Time & Date',
+                  placeholder: 'Data e hora de término',
                   name: 'test_ends_at',
                 }}
                 name={'test_ends_at'}
@@ -92,7 +92,7 @@ const OverviewPane = ({
         <Row>
           <Col>
             <Form.Group>
-              <Form.Label>Test Description</Form.Label>
+              <Form.Label>Descrição do teste</Form.Label>
               <Form.Control
                 as="textarea"
                 style={{ height: '40px' }}
@@ -105,22 +105,22 @@ const OverviewPane = ({
 
           <Col>
             <Form.Group>
-              <Form.Label>Test Type</Form.Label>
+              <Form.Label>Tipo do teste</Form.Label>
               <Form.Control
                 as={'select'}
                 value={testDetailsInput.test_type}
                 name={'test_type'}
                 onChange={handleTestDetailsInputChange}
               >
-                <option value={'open'}>Open to All</option>
-                <option value={'invite'}>Invite Only</option>
+                <option value={'open'}>Aberto a todos</option>
+                <option value={'invite'}>Apenas convidados</option>
               </Form.Control>
             </Form.Group>
           </Col>
 
           <Col>
             <Form.Group>
-              <Form.Label>Email Test Report to candidates?</Form.Label>
+              <Form.Label>Enviar relatório aos alunos?</Form.Label>
               <Form.Control
                 as={'select'}
                 required
@@ -128,8 +128,8 @@ const OverviewPane = ({
                 name={'test_email_report'}
                 onChange={handleTestDetailsInputChange}
               >
-                <option value={'no'}>No</option>
-                <option value={'yes'}>Yes</option>
+                <option value={'no'}>Não</option>
+                <option value={'yes'}>Sim</option>
               </Form.Control>
             </Form.Group>
           </Col>
