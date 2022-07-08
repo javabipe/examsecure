@@ -33,7 +33,7 @@ const ProctorModeLeftPanel = ({ testID }) => {
       <div className="proc-mode-left-panel">
         <Link to={generateLink(PROC_MODE_DASHBOARD)}>
           <div className={generateClassName(PROC_MODE_DASHBOARD)}>
-            Proctor Mode
+            Modo de monitoria
           </div>
         </Link>
 
@@ -41,19 +41,19 @@ const ProctorModeLeftPanel = ({ testID }) => {
 
         <Link to={generateLink(PROC_MODE_CURRENT_CANDIDATES)}>
           <div className={generateClassName(PROC_MODE_CURRENT_CANDIDATES)}>
-            Currently Taking
+            Em andamento
           </div>
         </Link>
 
         <Link to={generateLink(PROC_MODE_CANDIDATES_TEST_TAKEN)}>
           <div className={generateClassName(PROC_MODE_CANDIDATES_TEST_TAKEN)}>
-            Test Taken
+            Realizados
           </div>
         </Link>
 
         <Link to={generateLink(PROC_MODE_CANDIDATES_TEST_INVITED)}>
           <div className={generateClassName(PROC_MODE_CANDIDATES_TEST_INVITED)}>
-            Invited
+            Convidados
           </div>
         </Link>
 
@@ -63,11 +63,11 @@ const ProctorModeLeftPanel = ({ testID }) => {
               PROC_MODE_CANDIDATES_TEST_DISQUALIFIED,
             )}
           >
-            Disqualified
+            Desqualificados
           </div>
         </Link>
 
-        <div className="proc-mode-left-panel-title">Analytics</div>
+        <div className="proc-mode-left-panel-title">Análises</div>
 
         <Link to={generateLink(PROC_MODE_TEST_REPORTS)}>
           <div className={generateClassName(PROC_MODE_TEST_REPORTS)}>
@@ -77,21 +77,21 @@ const ProctorModeLeftPanel = ({ testID }) => {
 
         <Link to={generateLink(PROC_MODE_QUESTIONS_ANALYTICS)}>
           <div className={generateClassName(PROC_MODE_QUESTIONS_ANALYTICS)}>
-            Questions Analytics
+            Análise de Questões
           </div>
         </Link>
 
-        <div className="proc-mode-left-panel-title">Test Details</div>
+        <div className="proc-mode-left-panel-title">Detalhes do Teste</div>
 
         <Link to={generateLink(PROC_MODE_TEST_OVERVIEW)}>
           <div className={generateClassName(PROC_MODE_TEST_OVERVIEW)}>
-            Test Overview
+            Visão geral do teste
           </div>
         </Link>
 
         <Link to={generateLink(PROC_MODE_TEST_QUESTIONS)}>
           <div className={generateClassName(PROC_MODE_TEST_QUESTIONS)}>
-            Questions
+            Questões
           </div>
         </Link>
       </div>
