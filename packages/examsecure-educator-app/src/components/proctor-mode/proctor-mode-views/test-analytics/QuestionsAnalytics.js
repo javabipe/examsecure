@@ -6,10 +6,10 @@ const QuestionsAnalytics = () => {
   return (
     <div>
       <div>
-        <Title value={'Questions Analytics'} />
+        <Title value={'Análise de Questões'} />
         <div className="proc-dash-flagged-images-text">
-          This is a question wise analysis as per how many candidates have
-          attempted each question, and how many of them answered it correctly.
+          Essa é uma análise inteligente de questões, trazendo quantos alunos
+          responderam cada questão, e quantos acertaram as respostas.
         </div>
         <ComingSoon />
       </div>
