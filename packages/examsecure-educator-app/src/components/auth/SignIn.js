@@ -114,7 +114,7 @@ const SignIn = (props) => {
                 </TextInputContainer>
                 <TextInputContainer>
                   <TextInput
-                    label={'Password'}
+                    label={'Senha'}
                     onBlur={onBlur}
                     onChange={(pwd) => {
                       setPwd(pwd);
@@ -130,7 +130,7 @@ const SignIn = (props) => {
               <ButtonContainer>
                 <Button
                   variant={'primary'}
-                  label={'Sign In'}
+                  label={'Entrar'}
                   type={'submit'}
                   width={'150px'}
                 />
