@@ -104,7 +104,7 @@ export default ({
               onClick={() => history.push('/demo')}
               style={{ fontSize: '19px', padding: '0.7rem' }}
             >
-              Try it out
+              Faça um teste
             </PrimaryButton>
           </TextContent>
         </TextColumn>
