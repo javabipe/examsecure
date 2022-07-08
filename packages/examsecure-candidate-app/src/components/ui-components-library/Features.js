@@ -56,12 +56,12 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
 export default ({
   cards = null,
   heading = "Recursos",
-  description = "A ampla gama de recursos do Ensino Seguro ajuda a impedir os alunos de trapacear e recorrer a qualquer negligência e protege a integridade do ensino. ",
+  description = "Os recursos do EnsinoSeguro evitam que os alunos trapaceiem ou utilizem qualquer fraude na realização dos cursos.",
 }) => {
   const defaultCards = [
     {
       imageSrc: aiIcon,
-      title: "Face Detection & Analysis",
+      title: "Identificação Facial e Análise",
     },
     { imageSrc: personIcon, title: "Identificação de fraude" },
     { imageSrc: headIcon, title: "Estimativa da posição da cabeça" },
@@ -89,7 +89,7 @@ export default ({
                 />
               </span>
               <span className="textContainer">
-                <span className="title">{card.title || "Fully Secure"}</span>
+                <span className="title">{card.title || "Completamente Seguro"}</span>
               </span>
             </Card>
           </Column>
