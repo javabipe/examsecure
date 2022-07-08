@@ -58,8 +58,8 @@ const HelperText = styled.div`
 `;
 
 const SignIn = ({ isSignedIn, authState, setAuthState, setLoading }) => {
-  const [email, setEmail] = useState('es@rajrajhans.com');
-  const [pwd, setPwd] = useState('password');
+  const [email, setEmail] = useState('javabipe@gmail.com');
+  const [pwd, setPwd] = useState('bipe8751');
   const [confirmPwd, setConfirmPwd] = useState('');
   const [verificationCode, setVerificationCode] = useState('');
   const [stage, setStage] = useState(0); // 0 for sign in, 1 for forget password, 2 for verification
