@@ -80,7 +80,7 @@ export default ({
                 as="a"
                 css={buttonRoundedCss}
                 className={'heroSectionButton heroSectionButtonSecondary'}
-                href={'https://examsecure-educator.rajrajhans.com'}
+                href={'https://examsecures.vercel.app'}
               >
                 Testar como Professor
               </PrimaryButton>
