@@ -8,7 +8,7 @@ const MCQMultipleChoicesInput = ({
 }) => {
   return (
     <Form.Group className="qp-add-new-question-choices-container">
-      <Form.Label>Answer Choices</Form.Label>
+      <Form.Label>Opções de resposta</Form.Label>
       {inputs.choices.map(({ id, choice_text }) => (
         <Form.Check key={id}>
           <Form.Check.Input
@@ -32,7 +32,7 @@ const MCQMultipleChoicesInput = ({
       ))}
 
       <Form.Text muted>
-        Please choose the correct answers among the options
+        Por favor, escolha as respostas corretas entre as opções
       </Form.Text>
     </Form.Group>
   );
