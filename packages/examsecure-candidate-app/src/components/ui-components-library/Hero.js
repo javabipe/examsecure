@@ -42,10 +42,10 @@ export default ({
   imageDecoratorBlob = true,
   buttonRounded = true,
   features = [
-    'Automated Proctoring via Webcam',
-    'Complete Browser Lockdown',
-    'Completely Open Source and Customizable',
-    'Easily Scalable, Powered by AWS',
+    'Monitoramento automático pela Webcam',
+    'Bloqueio Completo do Navegador',
+    'Adaptável para qualquer Instituição de Ensino',
+    'Prevenção de colas e outras fraudes',
   ],
 }) => {
   const buttonRoundedCss = buttonRounded && tw`rounded-full`;
