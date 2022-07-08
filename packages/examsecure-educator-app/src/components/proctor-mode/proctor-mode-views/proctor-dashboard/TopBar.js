@@ -22,17 +22,17 @@ const TopBar = ({ test }) => {
       <Box
         isLoading={!test}
         num={10}
-        text={'candidates currently taking the test'}
+        text={'alunos atualmente fazendo o teste'}
       />
       <Box
         isLoading={!test}
         num={5}
-        text={'candidates have submitted the test'}
+        text={'candidatos que já terminaram o teste'}
       />
       <Box
         isLoading={!test}
         num={4}
-        text={'suspicious activities flagged so far'}
+        text={'atividades suspeitas sinalizadas até agora'}
       />
     </div>
   );
