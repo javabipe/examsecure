@@ -25,9 +25,9 @@ const SingleQuestion = ({
           {question.question_text}
         </div>
         <div className="dash-qp-sq-center-bottom-bar">
-          <div>Maximum Score: {question.question_max_score}</div>
+          <div>Pontuação máxima: {question.question_max_score}</div>
           <div>
-            Negative Marking:{' '}
+            Marcação negativa:{' '}
             {question.negative_marking === 'yes'
               ? '-' + question.negative_marks
               : 'No'}
