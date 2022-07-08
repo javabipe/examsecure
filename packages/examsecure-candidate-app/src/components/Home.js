@@ -5,7 +5,6 @@ import AnimationRevealPage from './ui-components-library/AnimationRevealPage';
 import Hero from './ui-components-library/Hero';
 import Features from './ui-components-library/Features';
 import FAQ from './ui-components-library/FAQ';
-import GetStarted from './ui-components-library/GetStarted';
 import StepsFeature from './ui-components-library/StepsFeature';
 import FeaturesTwoColSection from './ui-components-library/FeaturesTwoColSection'; //eslint-disable-line
 import browserLockdownImg from '../static/browser_lockdown.svg';
@@ -63,7 +62,6 @@ export default () => {
             </>
           }
         />
-        {mode === 1 ? <GetStarted /> : null}
       </AnimationRevealPage>
     </div>
   );
