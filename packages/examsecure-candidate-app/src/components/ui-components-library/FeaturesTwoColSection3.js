@@ -94,7 +94,7 @@ export default ({
             <Description style={{ color: '#000000bf' }}>
               EnsinoSeguro utiliza a webcam do computador e realiza análise de
               imagens em tempo real. Dessa forma, detecta se durante o curso
-              não tem pessoas<b>em frente a câmera</b>, se existe mais de{' '}
+              não tem pessoas <b>em frente a câmera</b>, se existe mais de{' '}
               <b>uma pessoa durante o curso/prova</b>, se a{' '}
               <b>pessoa em frente o computador não for reconhecida</b>{' '}
               (fraudes) e muito mais.
