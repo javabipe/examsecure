@@ -36,7 +36,7 @@ const TestQuestions = ({
 
   return (
     <div>
-      <Title value={'Test Questions'} />
+      <Title value={'Questões do teste'} />
 
       {!test ? (
         <div className="loading-spinner">
