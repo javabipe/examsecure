@@ -6,19 +6,19 @@ const routes = [
   {
     path: '/',
     component: Dashboard,
-    title: 'Dashboard',
+    title: 'Painel de controle',
     exact: true,
   },
   {
     path: '/create-new-test',
     component: CreateTest,
-    title: 'Create New Test',
+    title: 'Criar novo teste',
     exact: false,
   },
   {
     path: '/proctor-mode',
     component: ProctorModeWrapper,
-    title: 'Proctor Mode',
+    title: 'Modo de monitoria',
     exact: false,
   },
 ];
