@@ -140,11 +140,11 @@ const Landing = ({ loadForSeconds, currentUser, questionSetMetadata }) => {
             desconectado!
           </li>
           <li>
-            Certifique-se de que todos<b>pop-ups foram desativados</b> antes de proceder.
+            Certifique-se de que todos <b>pop-ups foram desativados</b> antes de proceder.
           </li>
           <li>
             Se você continuar sendo redirecionado para esta tela, certifique-se de estar
-            permitindo permissões de câmera para ExamSecure. Recomendamos usar o Google
+            permitindo acesso à câmera. Recomendamos usar o Google
             Chrome.
           </li>
         </ul>
@@ -194,7 +194,7 @@ const Landing = ({ loadForSeconds, currentUser, questionSetMetadata }) => {
           </li>
           <li>Não tente esconder seu rosto durante o teste.</li>
           <li>
-            Certifique-se de que ninguém mais esteja sentado com você durante todo o
+            Certifique-se de que ninguém mais esteja sentado com você durante toda a
             duração do teste.
           </li>
         </ul>
@@ -219,7 +219,7 @@ const Landing = ({ loadForSeconds, currentUser, questionSetMetadata }) => {
         width={'500px'}
         className={'instructionsBox confirmationBox'}
       >
-        <Alert.Heading className={'instrHeading'}>Confirmaação</Alert.Heading>
+        <Alert.Heading className={'instrHeading'}>Confirmação</Alert.Heading>
         {questionSetMetadata ? (
           <div className={'confirmationText'}>
             <div>
