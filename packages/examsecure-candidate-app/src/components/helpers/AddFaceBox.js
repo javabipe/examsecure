@@ -31,18 +31,18 @@ const AddFaceBox = ({
     <Fragment>
       <Alert variant={"info"} width={"500px"} className={"instructionsBox"}>
         <Alert.Heading className={"instrHeading"}>
-          Let's add your Face
+          Vamos salvar seu rosto
         </Alert.Heading>
         <ul className={"instructionsBoxList"}>
           <li>
-            Please wait, our system is detecting and saving the features of your
-            face.
+            Aguarde, nosso sistema está salvando sua biometria
+            facial.
           </li>
           <li>
-            If any face other than the one being scanned now shows up in the
-            frame during the test, an impersonation warning will be triggered.
+            Se qualquer rosto diferente daquele que está sendo escaneado agora aparecer
+            durante o teste, um alerta de fraude será emitido.
           </li>
-          <li>Ensure you do not wear any face covering.</li>
+          <li>Certifique-se de não usar nada cobrindo o rosto.</li>
         </ul>
       </Alert>
 
@@ -54,7 +54,7 @@ const AddFaceBox = ({
           block
           onClick={() => setActiveSlide(4)}
         >
-          Next
+          Prosseguir
         </Button>
       ) : (
         <Button
@@ -73,7 +73,7 @@ const AddFaceBox = ({
             }}
           >
             <Spinner animation={"border"} style={{ marginRight: "12px" }} />
-            Adding your face ...
+            Salvando sua biomtria ...
           </span>
         </Button>
       )}
