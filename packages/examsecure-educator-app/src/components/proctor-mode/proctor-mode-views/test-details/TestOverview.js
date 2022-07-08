@@ -18,7 +18,7 @@ const TestOverview = ({
           justifyContent: 'space-between',
         }}
       >
-        <Title value={'Test Overview'} />
+        <Title value={'Visão Geral do Teste'} />
         {!test && (
           <div>
             <LoadingSpinner />
