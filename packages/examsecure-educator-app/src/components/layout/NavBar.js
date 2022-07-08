@@ -42,7 +42,7 @@ const Navbar = (props) => {
           <img alt={'examsecure'} src={logo} width={40} />
         </Link>
         <Link to={'/'} style={{ textDecoration: 'none' }}>
-          <span className={'logo'}>ExamSecure</span>
+          <span className={'logo'}>EnsinoSeguro</span>
         </Link>
       </BootstrapNavbar.Brand>
 
@@ -64,7 +64,7 @@ const Navbar = (props) => {
                   className="nav-bar-items"
                   style={{ cursor: 'pointer' }}
                 >
-                  Sign Out
+                  Sair
                 </Nav.Link>
               </li>
             </>
@@ -76,7 +76,7 @@ const Navbar = (props) => {
                   className="nav-bar-items"
                   style={{ cursor: 'pointer' }}
                 >
-                  Sign In
+                  Entrar
                 </Nav.Link>
               </li>
             </>
