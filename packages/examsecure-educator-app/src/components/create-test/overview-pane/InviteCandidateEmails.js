@@ -21,7 +21,7 @@ const InviteCandidateEmails = () => {
       }
     } else {
       alert(
-        'To optimize costs, we are currently restricting email invitations to vit.edu emails only. Please enter vit.edu emails or keep the test Open To All and share the test link with candidates.',
+        'Em andamento',
       );
     }
   };
