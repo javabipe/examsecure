@@ -77,7 +77,7 @@ const TestSelector = ({ fetchQuestions, questions, currentUser }) => {
               <Form.Group>
                 {qSets.length > 0 && isSpinnerActive === false ? (
                   <>
-                    <Form.Label>Select a test</Form.Label>
+                    <Form.Label>Selecione um exame</Form.Label>
                     <Form.Control
                       as={'select'}
                       custom
